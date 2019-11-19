@@ -1,0 +1,39 @@
+.bcd-top-performers{
+    display: flex;
+    flex-direction: column;
+    
+    .congrats {
+        margin-bottom: 37px;
+
+        @include respond-to($phone) {
+            display: none;
+        }
+    }
+
+    .view-leaderboard {
+        font-size: 13px;
+        color: $primary;
+        cursor: pointer;
+    }
+
+    .full-leaderboard{
+        @extend .view-leaderboard;
+
+        @include respond-to($phone) {
+            display: none;
+        }
+    }
+
+    .full-leaderboard-footer{
+        @extend .view-leaderboard;
+        display: none;
+
+        @include respond-to($phone) {
+            display: block;
+        }
+    }
+    
+    @include respond-to($phone) {
+        display: none;
+    }
+}

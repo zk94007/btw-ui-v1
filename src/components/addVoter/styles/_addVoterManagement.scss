@@ -1,0 +1,150 @@
+.btw-add-voters {
+	align-items: center;
+	justify-content: center;
+    display: flex;
+    padding-top: 15px;
+  
+	.page-title{
+        margin: 50px 0 20px 0;
+
+        @include respond-to($tablet) {
+            margin-top: 20px;
+        }
+
+        @include respond-to($phone) {
+            margin-top: 5px;
+        }
+	}
+  
+	.page-description{
+        margin-bottom: 20px;
+
+        span {
+            color: $primary;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        @include respond-to($phone) {
+           display: none;
+        }
+    }
+    
+    .page-no-connect-description{
+        margin-bottom: 20px;
+
+        span {
+            cursor: pointer;
+            font-weight: 600;
+            color: $primary;
+        }
+
+        @include respond-to($computer) {
+            display: none;
+        }
+    }
+
+    .social-no-table {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        padding: 80px 0;
+        flex-direction: column;
+
+        @include respond-to($phone) {
+            margin-bottom: 160px;
+        }
+
+        @include respond-to($tablet) {
+            margin-bottom: 160px;
+        }
+    }
+
+    .social-no-data {
+        @extend .social-no-table;
+    }
+
+    .social-no-connect {
+        @extend .social-no-table;
+
+        @include respond-to($phone) {
+            display: none;
+        }
+    }
+
+    .table-container{
+        margin: 24px 0;
+        padding: 26px 32px;
+
+        .table-description {
+            padding: 13px 10px;
+
+            @include respond-to($phone) {
+               display: none;
+            }
+        }
+
+        @include respond-to($phone) {
+            padding: 0;
+            box-shadow: unset;
+            border-radius: 0;
+            background-color: unset;
+            margin:20px 0 140px 0;
+        }
+
+        @include respond-to($tablet) {
+            margin-bottom: 140px;
+        }
+    }
+
+    .voter-progress-bar-desktop {
+        margin-bottom: 24px;
+
+        @include respond-to($tablet) {
+            display: none;
+        }
+
+        @include respond-to($phone) {
+            display: none;
+        }
+    }
+
+    .voter-progress-bar-tablet {
+        margin-bottom: 0px;
+
+        @include respond-to($desktop) {
+            display: none;
+        }
+    }
+
+    .social-info-desktop{
+        margin-bottom: 24px;
+
+        @include respond-to($tablet) {
+            display: none;
+        }
+    }
+
+    .social-info-tablet{
+        margin-bottom: 35px;
+        padding: 13px;
+
+        @include respond-to($desktop) {
+            display: none;
+        }
+
+        @include respond-to($phone) {
+            display: none;
+        }
+    }
+
+    .connect-list-info{
+        margin-bottom: 24px;
+    }
+}
+
+.bav-alert-dialog{
+    @include respond-to($desktop) {
+        display: none !important;
+    }
+}

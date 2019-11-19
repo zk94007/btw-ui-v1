@@ -1,0 +1,62 @@
+.btw-voter-status-select{
+
+    width: 135px;
+
+    .Select-control{
+        border: 0;
+
+        .Select-multi-value-wrapper{
+
+            @mixin select-status($color) {
+                padding: 0 10px !important;
+                margin: 0;
+
+                .Select-value-label{
+                    color: $color !important;
+                }
+            }
+
+            .bss-not-registered{
+                @include select-status($error);
+            }
+            
+            .bss-infrequent{
+                @include select-status($alert);
+            }
+            
+            .bss-regular{
+                @include select-status($success);
+            }
+        }
+
+        .Select-clear-zone{
+            display: none;
+        }
+    }
+
+    :hover {
+        box-shadow: unset;
+    }
+
+    @mixin option-color($color) {
+        color: $color;
+        padding: 6px;
+        margin: 5px 0;
+    }
+
+    .bss-not-registered{
+        @include option-color($error);
+    }
+    
+    .bss-infrequent{
+        @include option-color($alert);
+    }
+    
+    .bss-regular{
+        @include option-color($success);
+    }
+}
+
+.Select.is-focused:not(.is-open) > .Select-control{
+    box-shadow: unset;
+}

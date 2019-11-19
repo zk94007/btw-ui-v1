@@ -1,0 +1,63 @@
+.btw-checkbox{
+
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 0;
+    
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .checkmark{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        background-color: $white;
+        border: 1px solid $divider;
+        box-sizing: border-box;
+        border-radius: 2px;
+    }
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    :hover input ~ .checkmark {
+        background-color: $white;
+    }
+
+    input:checked ~ .checkmark {
+        background-color: $primary;
+    }
+
+    input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    .checkmark:after {
+        left: 4px;
+        width: 6px;
+        height: 11px;
+        border: solid $white;
+        border-width: 0 1.5px 1.5px 0;
+        -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+        transform: rotate(40deg);
+    }
+}

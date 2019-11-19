@@ -1,0 +1,65 @@
+.btw-social-connect {
+	width: 512px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	padding: 51px 88px;
+    margin: 100px 0;
+
+	.content{
+        border-bottom: 1px solid $divider;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+
+        .title{
+            margin-bottom: 12px;
+        }
+      
+        .description{
+            margin-bottom: 24px;
+        }
+        
+        .sub-description{
+            margin-bottom: 16px;
+        }
+
+        .upload-button{
+            width: 76px;
+        }
+
+        @include respond-to($phone) {
+            border-bottom: unset;
+            padding-bottom: 0;
+        }
+	}
+  
+    .upload-content{
+        @include respond-to($phone) {
+            display: none;
+        }
+    }
+
+    .social-group{
+        padding: 24px;
+        border: 1px solid $divider;
+        border-radius: 3px;
+        box-sizing: border-box;
+        
+        .btw-social-item:last-child {
+            .border-container {
+                display: none;
+            }
+        }
+	}
+    
+    @include respond-to($phone) {
+        padding: 37px 16px;
+        width: 100%;
+        margin: 64PX 24px;
+    }
+
+    .skip-button {
+        margin-top: 15px;
+    }
+}

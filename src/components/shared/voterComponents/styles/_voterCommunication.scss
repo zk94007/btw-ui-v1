@@ -1,0 +1,75 @@
+.btw-voter-communication {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    padding-top: 24px;
+
+    .title {
+        margin-bottom: 12px;
+    }
+
+    .social-status {
+        display: flex;
+        flex-direction: row; 
+        margin-bottom: 15px;
+
+        @include respond-to($phone) {
+            flex-direction: column; 
+        }
+    }
+
+    .social-text{
+        padding-right: 8px;
+    }
+
+    .show-more{
+        color: $primary;
+        cursor: pointer;
+    }
+
+    .content-part{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 32px;
+        
+        .subtitle{
+            font-weight: 600;
+            margin-bottom: 14px;
+        }
+
+        .description{
+            margin-bottom: 16px;
+        }
+
+        .message-sample{
+            padding: 12px 24px;
+            background-color: $divider;
+            margin-bottom: 16px;
+        }
+
+        .button-list{
+            display: flex;
+            flex-direction: row; 
+
+            .send-button{
+                width: unset;
+
+                .fa-envelope{
+                    padding-right: 5px;
+                }
+            }
+
+            .social-button-list{
+                padding: 0 10px;
+            }
+        }
+
+        .person-list{
+            padding-left: 15px;
+        }
+    }
+}

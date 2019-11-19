@@ -1,0 +1,17 @@
+.btw-voter-profile {
+	align-items: center;
+	justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid $divider;
+
+    .voter-name{
+        margin-top: 13px;
+    }
+
+    .voter-info{
+        margin-bottom: 36px;
+        color: $secondary;
+    }
+}

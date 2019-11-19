@@ -1,0 +1,73 @@
+.btw-button {
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  color: $white;
+  font-weight: 600;
+  font-size: 13px;
+  height: 40px;
+}
+
+.button-blue {
+  background-color: $primary;
+  &:hover {
+    background-color: $primary-hover;
+  }
+  &:disabled, [disabled] {
+    background-color: $divider;
+    color: $secondary;
+    opacity: 0.6;
+  }
+}
+.button-red {
+  background-color: $danger;
+  &:hover {
+    background-color: $danger-hover;
+  }
+  &:disabled, [disabled] {
+    background-color: $divider;
+    color: $secondary;
+    opacity: 0.6;
+  }
+}
+
+.button-white {
+  background-color: $white;
+  color: $main;
+  border: 1px solid $divider;
+  &:hover {
+    background-color: $background;
+  }
+  &:disabled, [disabled] {
+    background-color: $white;
+    opacity: 0.4;
+  }
+}
+
+.button-large {
+  @include respond-to($phone) {
+    width: 240px;
+  }
+  @include respond-to($computer) {
+    width: 336px;
+  }
+}
+
+.button-medium {
+  @include respond-to($phone) {
+    width: 240px;
+  }
+  @include respond-to($computer) {
+    width: 200px;
+  }
+}
+
+.button-small {
+  font-size: 11px;
+  min-width: 60px;
+  height: 24px;
+}
+
+.button-full-width{
+  width: 100%;
+}

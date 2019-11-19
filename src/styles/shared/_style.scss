@@ -1,0 +1,14 @@
+body {
+  font-family: Open-Sans;
+}
+
+a {
+    font-weight: 600;
+    font-size: 13px;
+    color: $main;
+    text-decoration: underline;
+
+    &:hover {
+        color: lighten($main, 30%);
+    }
+}

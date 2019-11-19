@@ -1,0 +1,159 @@
+.btw-promo-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .main-content{
+        display: flex;
+        border-bottom: 2px solid $divider;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+
+        @include respond-to($phone) {
+            flex-direction: column;
+        }
+
+        .logo-image{ 
+            margin-bottom: 28px;
+            max-width: 137px;
+        }
+        
+        .info-content{
+            display: flex;
+
+            @include respond-to($phone) {
+                flex-direction: column-reverse;
+                width: 100%;
+            }
+
+            .info-list-content{
+                display: flex;
+
+                @include respond-to($tablet) {
+                    flex-direction: column;
+                }
+                
+                @include respond-to($phone) {
+                    justify-content: space-between;
+                    width: 100%;
+                }
+
+                .info-list{
+                    margin: 0;
+                    padding: 0 36px 36px 0;
+                    list-style-type: none;
+                    
+                    li{
+                        padding-bottom: 8px;
+                    }
+
+                    a {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $black;
+                        text-decoration: unset;
+
+                        @include respond-to($portable) {
+                            font-size: 12px;
+                            font-weight: normal;
+                        }
+                    }
+
+                    .contact-info{
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $black;
+                        
+                        @include respond-to($portable) {
+                            padding: 1.6px 0;
+                            font-size: 12px;
+                            font-weight: normal;
+                        }
+                    }
+
+                    .contact-email{
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $primary;
+                        
+                        @include respond-to($portable) {
+                            padding: 1.6px 0;
+                            font-size: 12px;
+                            font-weight: normal;
+                        }
+                    }
+
+                    @include respond-to($phone) {
+                        padding-right: 10px;
+                    }
+
+                    @include respond-to($phone) {
+                        padding-right: 0;
+                    }
+                }
+            }
+
+            .email-content {
+                margin-bottom: 72px;
+
+                @include respond-to($desktop) {
+                    flex-direction: column;
+                    padding-right: 120px;
+                }
+
+                .email-description{
+                    color: $black;
+                    font-size: 14px;
+                    margin-bottom: 18px;
+                }
+
+                .email-input{
+                    display: flex;
+                    align-items: flex-end;
+                    position: relative;
+                    width: 100%;
+
+                    .btw-captain-input {
+                        margin-top: 0;
+                    }
+
+                    input {
+                        width: 100%;
+                        padding-right: 25px;
+                        border: 0;
+                        font-size: 20px;
+
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    
+                    .arrow-right{
+                        position: absolute;
+                        right: 0;
+                        bottom: 10px;
+                    }
+
+                    .arrow-enabled {
+                        cursor: pointer;
+                    }
+
+                    .arrow-disabled {
+                        bottom: 31px;
+                    }
+                }
+            }
+
+            .result-message {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .footer-title{
+        text-align: center;
+        width: 100%;
+        padding: 15px 0;
+    }
+}

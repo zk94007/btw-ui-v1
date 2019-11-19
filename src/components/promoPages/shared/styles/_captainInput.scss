@@ -1,0 +1,39 @@
+.btw-captain-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 65px;
+
+    .input-div {
+        border-bottom: 2px solid $black;
+        .input-label{
+            font-size: 14px;
+            color: $black;
+            font-weight: 500;
+            margin-bottom: 17px;
+
+            span{
+                color: $secondary;
+            }
+        }
+
+        input{
+            border: 0;
+            font-size: 20px;
+            width: 100%;
+
+            @include respond-to($phone) {
+                font-size: 14px;
+            }
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+    }
+
+    .error-text {
+        color: $error !important;
+    }
+}

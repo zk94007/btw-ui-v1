@@ -1,0 +1,71 @@
+.bpp-promo-description{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .main-part{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+        width: 90%;
+    
+        @include respond-to($tablet) {
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        @include respond-to($phone) {
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .description-part { 
+            width: 50%;
+    
+            @include respond-to($phone) {
+                width: 100%;
+            }
+        }
+        
+        .description-left{
+            font-size: 24px;
+            margin-bottom: 35px;
+            color: $black;
+            width: 335px;
+    
+            @include respond-to($phone) {
+                width: 100%;
+                font-size: 18px;
+                margin-bottom: 18px;
+            }
+    
+            @include respond-to($tablet) {
+                width: 100%;
+                font-size: 21px;
+                margin-bottom: 21px;
+                padding-right: 30px;
+            }
+        }
+    
+        .description-right{
+            font-size: 18px;
+            margin-bottom: 35px;
+            font-weight: normal;
+    
+            @include respond-to($phone) {
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+        }
+    
+        .find-out-more{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: $primary;
+            padding-bottom: 21px;
+            cursor: pointer;
+        }
+    }
+}

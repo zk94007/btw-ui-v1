@@ -1,0 +1,63 @@
+.btw-radio-option {
+    display: table;
+
+    .container{
+        display: block;
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 7px;
+        font-weight: normal !important;
+        color: $main;
+        cursor: pointer;
+        font-size: 13px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+            
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+    
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 12px;
+            width: 12px;
+            background-color: $white;
+            border-radius: 50%;
+            border: 1px solid $primary;
+            margin: 3px;
+        }
+    
+        &:hover input ~ .checkmark {
+            background-color: $white;
+        }
+    
+        input:checked ~ .checkmark {
+            background-color: $white;
+        }
+      
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+    
+        input:checked ~ .checkmark:after {
+            display: block;
+        }
+    
+        .checkmark:after {
+            top: 1.5px;
+            left: 1.5px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: $primary;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.btw-performer-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    margin-bottom: 32px;
+
+    @include respond-to($phone) {
+        padding: 0;
+        box-shadow: unset !important;
+        border-radius: 0 !important;
+    }
+}

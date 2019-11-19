@@ -1,0 +1,30 @@
+.btw-faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .faq-list{
+        width: 800px;
+        margin-bottom: 63px;
+        
+        @include respond-to($portable) {
+            width: 100%;
+        }
+
+        .faq-title{
+            font-size: 42px;
+            margin: 76px 0;
+            color: $black;
+    
+            @include respond-to($tablet) {
+                font-size: 32px;
+            }
+    
+            @include respond-to($phone) {
+                font-size: 28px;
+                margin: 49px 0;
+            }
+        }
+    }
+}

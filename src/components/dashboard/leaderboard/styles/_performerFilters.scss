@@ -1,0 +1,69 @@
+.btw-performer-filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    
+    .search-input{
+        width: 256px;
+        margin-right: 10px;
+
+        @include respond-to($phone) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+
+    .button-group {
+        display: flex;
+        width: min-content;
+
+        @include respond-to($phone) {
+            width: 100%;
+        }
+
+        .filter-group {
+
+            .filter-button{
+                width: fit-content;
+                border-radius: 0;
+                text-transform: capitalize;  
+                color: $secondary;  
+                white-space: nowrap;
+                padding-left: 8px;
+                padding-right: 8px;
+
+                @include respond-to($phone) {
+                    width: 25%;
+                }
+            }
+
+            .filter-button:focus{
+                outline: unset;
+            }
+
+            :first-child {
+                border-radius: 3px 0 0 3px;
+            }
+    
+            :last-child {
+                border-radius: 0 3px 3px 0;
+            }
+
+            .filter-select{
+                border: 1px solid rgba($primary, 0.4);
+                color: $main;
+                background-color: rgba($primary, 0.05);
+            }
+
+            @include respond-to($phone) {
+                width: 100%;
+            }
+        }
+    }
+
+    @include respond-to($phone) {
+        flex-direction: column;
+    }
+}

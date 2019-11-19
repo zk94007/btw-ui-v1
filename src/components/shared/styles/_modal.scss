@@ -1,0 +1,42 @@
+.btw-modal {
+    display: flex !important;
+    align-items: center;
+
+    .modal-dialog{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        @include respond-to($phone) {
+            padding: 0 24px;
+        }
+
+        .modal-content {
+            border-radius: 2px;
+            width: 512px;
+            padding: 34px 40px;
+    
+            @include respond-to($phone) {
+                width: 100%;
+                padding: 30px 24px;
+            }
+
+            .modal-header {
+                border-bottom: none;
+                text-align: left;
+                line-height: 22px;
+                padding: 15px 0;
+            }
+        
+            .modal-body {
+                min-height: 150px;
+                padding: 15px 0;
+            }
+
+            .modal-footer {
+                border-top: none;
+                padding: 15px 0;
+            }
+        }
+    }
+}

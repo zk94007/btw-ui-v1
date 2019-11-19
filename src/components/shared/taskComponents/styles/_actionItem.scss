@@ -1,0 +1,45 @@
+.btw-action-item {
+    padding: 21px 24px;
+    margin-bottom: 16px;
+    width: 100%;
+
+    .action-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .action-title {
+        margin: 32px 0 8px 0;
+        font-size: 12px;
+        line-height: 130%;
+    }
+
+    .task-done {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+
+    .action-status {
+        display: flex;
+        align-items: center;
+  
+        .btw-status-text {
+          margin-left: 5px;
+        }
+    }
+
+    .action-points {
+        display: flex;
+        align-items: center;
+
+        .points-text {
+            margin-left: 4px;
+        }
+    }
+        
+    .action-duration {
+        font-size: 12px;
+        margin-bottom: 27px;
+    }
+}

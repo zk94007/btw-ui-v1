@@ -1,0 +1,28 @@
+.btw-typography {
+  color: $main;
+
+  &.heading {
+    font-weight: 600;
+
+    @include respond-to($computer) {
+      font-size: 20px;
+    }
+    @include respond-to($phone) {
+      font-size: 18px;
+    }
+  }
+
+  .sub-title {
+    font-weight: normal;
+  }
+
+  &.body {
+    @extend .sub-title;
+    font-size: 13px;
+  }
+
+  &.functional {
+    @extend .sub-title;
+    font-size: 12px;
+  }
+}

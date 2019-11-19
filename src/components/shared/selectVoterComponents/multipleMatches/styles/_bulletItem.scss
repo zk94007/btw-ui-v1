@@ -1,0 +1,54 @@
+.btw-bullet-item{
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    width: 100%;
+    align-items: center;
+
+    .large-icon{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3px;
+    }
+    
+    .small-icon{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3px;
+    }
+
+    .select{
+        background-color: $primary;
+    } 
+    
+    .skip{
+        background-color: $error;
+    }
+    
+    .active{
+        color: $white;
+        background-color: $primary;
+    }
+
+    .default{
+        color: $main;
+        background-color: $divider;
+    }
+
+    .line-item{
+        width: calc(50% - 13px);
+        height: 1px;
+    }
+
+    .line-border {
+        border-bottom: 1px solid $divider;
+    }
+}

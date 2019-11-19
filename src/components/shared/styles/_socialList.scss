@@ -1,0 +1,25 @@
+.btw-social-list{
+
+    display: flex;
+    width: fit-content;
+    align-items: center;
+
+    div{
+        margin-right: 8px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .voter-file{
+        margin-right: 8px;
+    }
+}
+
+.social-list-large{
+    div{
+        margin-right: 24px;
+    }
+}
+

@@ -1,0 +1,92 @@
+@import '../../styles/shared/index.scss';
+
+.btw-voter-page {
+
+  .btw-voter-filter-mobile {
+      .Select-control {
+        border: 1px solid #ccc;
+      }
+  }
+
+  .add-voter-link-mobile {
+    margin-left: 3px;
+    font-size: 13px;
+    color: $primary;
+  }
+
+  .btw-voter-filter {
+    margin: 23px 0;
+    position: relative;
+
+    .btw-voter-filter-item {
+      margin: 1em;
+      font-weight: 600;
+      color: $charcoal;
+      cursor: pointer;
+    }
+
+    .btw-voter-filter-item.active-item {
+      color: black;
+    }
+
+    .btw-voter-add-btn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 0.35em;
+      width: 132px;
+      z-index: 1;
+
+      @include respond-to($phone) {
+        position: relative;
+        display: none;
+      }
+    }
+  }
+}
+
+.btw-voter-item {
+  &:hover {
+    border: 1px solid $primary;
+  }
+  &.active-item {
+    border: 1px solid $primary;
+  }
+}
+
+#add-voter-modal {
+  padding: 0 10px;
+
+  #title-row {
+    margin-bottom: 20px;
+  }
+
+  #close-icon {
+    text-align: right;
+    img {
+      cursor: pointer;
+    }
+  }
+
+  #buttons {
+    text-align: center;
+    button {
+      margin: 10px 0;
+    }
+  }
+}
+
+#delete-voter-modal {
+  padding: 0 10px;
+
+  #description {
+    margin: 40px 0;
+  }
+
+  #buttons {
+    text-align: center;
+    button {
+      margin: 10px 0;
+    }
+  }
+}

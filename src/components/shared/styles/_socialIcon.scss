@@ -1,0 +1,53 @@
+.btw-social-icon{
+
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.social-icon-small{
+    width: 16px;
+    height: 16px;
+}
+
+.social-icon-medium{
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon-large{
+    min-width: 48px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+.facebook {
+    background-color: $facebook-color;
+}
+
+.google {
+    background-color: $google-color;
+}
+
+.twitter {
+    background-color: $twitter-color;
+}
+
+.linkedIn {
+    background-color: $linkedin-color;
+    
+}
+
+.social-icon-default {
+    background-color: $divider;
+}
+
+.btw-social-popup {
+    .social-user-link {
+        .btw-btn-link {
+            font-size: 13px;
+            color: $primary;
+        }
+    }
+}

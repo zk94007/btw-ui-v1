@@ -1,0 +1,23 @@
+.btw-app {
+  background-color: $background;
+  height: 100vh;
+  .btw-content {
+    display: flex;
+    justify-content: center;
+    @include respond-to($desktop) {
+      padding-top: 72px;
+    }
+    @include respond-to($tablet) {
+      padding-top: 76px;
+      align-items: center;
+    }
+    @include respond-to($phone) {
+      padding-top: 76px;
+      align-items: center;
+    }
+  }
+
+  .btw-light-content{
+    background-color: $white;
+  }
+}

@@ -1,0 +1,5 @@
+.btw-notification-setting {
+    @include respond-to($phone) {
+        padding: 0 24px;
+    }
+}

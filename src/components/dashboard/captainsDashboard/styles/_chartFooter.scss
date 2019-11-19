@@ -1,0 +1,51 @@
+.bcd-chart-footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 0 25px 25px 25px;
+    
+    .perform-status{
+        width: 192px;
+        height: 72px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $divider;
+        box-sizing: border-box;
+        border-radius: 3px; 
+        position: relative;
+
+        .point-value{
+            color: $secondary;
+        }
+
+        .perform-percent{
+            display: flex;
+            position: absolute;
+            left: 8px;
+            top: 8px;
+
+            .arrow{
+                padding-right: 2px;
+            }
+        }
+
+        @include respond-to($phone) {
+            width: 48%;
+        }
+    }
+
+    .point-status{
+        background-color: $primary;
+
+        .point-value{
+            color: $white;
+        }
+    }
+
+    @include respond-to($phone) {
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,26 @@
+.btw-tabs {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+
+    .btw-tab {
+      margin: 0 10px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      color: $secondary;
+      line-height: 18px;
+      padding: 10px 5px;
+
+      &.btw-tab-active {
+        color: black;
+
+        @include respond-to($phone) {
+            border-bottom : solid 2px $primary;
+        }
+      }
+    }
+  }

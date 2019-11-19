@@ -1,0 +1,140 @@
+@import '../../styles/shared/index.scss';
+
+.welcome-div {
+    margin: 100px 0;
+
+    @include respond-to($computer) {
+        width: 512px;
+        padding: 51px 24px;
+    }
+    .welcome-content {
+
+        @include respond-to($phone) {
+            position: absolute;
+            color: $white !important;
+            padding: 80px 40px;
+            margin-top: 35px;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        .welcome-title {
+            margin-bottom: 12px;
+            
+            @include respond-to($phone) {
+                color: $white !important;
+            }
+        }
+    
+        .welcome-message {
+            margin-bottom: 43px;
+        
+            @include respond-to($phone) {
+                margin-bottom: 28px;
+                color: $white !important;
+            }
+        }
+    }
+
+    .welcome-video-container {
+
+        @include respond-to($computer) {
+            height: 272px;
+            position: relative;
+        }
+
+        @include respond-to($phone) {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        video {
+            @include respond-to($phone) {
+                object-fit: cover;
+            }
+        }
+
+        .full-screen {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: $white;
+            cursor: pointer;
+
+            @include respond-to($phone) {
+                display: none;
+            }
+        }
+
+        .play-button {
+            z-index: 1000;
+            position: absolute;
+            background: rgba($white, 0.25);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+
+            @include respond-to($computer) {
+                top: 96px;
+                left: 192px;
+                width: 80px;
+                height: 80px;
+            }
+
+            @include respond-to($phone) {
+                top: calc(50% - 40px);
+                left: calc(50% - 40px);
+                width: 80px;
+                height: 80px;
+            }
+
+            .white-circle {
+                display: flex;
+                background: $white;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                width: 52px;
+                height: 52px;
+
+                .play-icon {
+                    border: 0;
+                    background: transparent;
+                    box-sizing: border-box;
+                    width: 0;
+                    height: 17.33px;
+                    border-color: transparent transparent transparent #202020;
+                    transition: 100ms all ease;
+                    border-style: solid;
+                    border-width: 10px 0 10px 16px;
+                    margin-left: 6px;
+
+                    &.pause {
+                        border-style: double;
+                        border-width: 0px 0 0px 16px;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .watch-later-div {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+
+        @include respond-to($phone) {
+            position: absolute;
+            bottom: 23px;
+            width: 100%;
+            left: 0;
+        }
+    }
+}

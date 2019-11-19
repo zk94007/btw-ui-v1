@@ -1,0 +1,8 @@
+a.btw-btn-link {
+	&:not([href]) {
+		color: $primary;
+	}
+	font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}

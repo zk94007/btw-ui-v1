@@ -1,0 +1,67 @@
+.bfp-faq-item{
+    border: 0;
+    border-top: 2px solid $black;
+    border-radius: 0;
+    padding: 34px 40px;
+
+    @include respond-to($phone) {
+        padding: 31px 12px;
+    }
+
+    .card-header{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0;
+        padding: 0;
+        background-color: unset;
+
+        .faq-question{
+            color: $black;
+            font-size: 16px;
+            font-weight: 500;
+            width: 65%;
+            
+            @include respond-to($portable) {
+                width: 85%;
+            }
+
+            @include respond-to($phone) {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .card-body{
+        padding: 39px 0 0 0;
+        width: 90%;
+
+        @include respond-to($phone) {
+            width: 100%;
+        }
+
+        .faq-description{
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 28px;
+            
+            @include respond-to($phone) {
+                font-size: 16px;
+            }
+        }
+        
+        a{
+            font-size: 18px;
+            color: $primary;
+            text-decoration: unset;
+
+            @include respond-to($phone) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &:last-child {
+        border-bottom: 2px solid $black;
+    }
+}

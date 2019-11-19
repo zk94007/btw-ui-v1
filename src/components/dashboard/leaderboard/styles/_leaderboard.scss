@@ -1,0 +1,40 @@
+.btw-leaderboard {
+
+    .page-header {
+        margin: 30px 0 26px 0;
+
+        .header-url{
+            margin-bottom: 18px;
+
+            span{
+                color: $primary;
+            }
+
+            @include respond-to($phone) {
+                display: none;
+            }
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+
+            .gold-medal{
+                margin-left: 8px;
+            }
+
+            @include respond-to($phone) {
+                font-size: 18px;
+            }
+        }
+        
+        @include respond-to($phone) {
+            margin: 21px 0 18px 0;
+        }
+    }
+
+    @include respond-to($phone) {
+        padding: 0 24px;
+        background-color: $white;
+    }
+}

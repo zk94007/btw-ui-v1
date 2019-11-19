@@ -1,0 +1,51 @@
+.bpp-tutorial-carousel{
+    margin: 60px 0;
+
+    .carousel{
+        
+        .control-dots{
+            display: none;
+        }
+        
+        .slide {
+            background: unset;
+            display: flex;
+            align-items: center;
+            
+            .carousel-background{
+                background-image: url("../../../../resources/background/promo-carousel-background.svg");
+                
+                .carousel-content{
+                    background-image: radial-gradient(ellipse at 50% 49.96%, rgba($white, 0.3) 0%, rgba($white, 1) );
+                    padding: 60px 0;
+                }
+
+                .computer-text{ 
+                    font-size: 27px;
+                    height: 90px;
+                    padding: 0 140px;
+                    color: $black;
+    
+                    @include respond-to($tablet) {
+                        font-size: 21px;
+                        padding: 0 30px;
+                    }
+    
+                    @include respond-to($phone) {
+                        display: none;
+                    }
+                }
+            }
+
+            .phone-text{ 
+                font-size: 18px;
+                padding: 0;
+                color: $black;
+
+                @include respond-to($computer) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

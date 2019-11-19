@@ -1,0 +1,39 @@
+.btw-tag-list{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+	justify-content: center;
+    padding: 12px 32px;
+    
+    .title{
+        margin-bottom: 6px;
+        font-size: 18px !important;
+    }
+
+    .view-all{
+        font-weight: normal;
+        color: $primary;
+        cursor: pointer;
+    }
+    
+    .tag-list{
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 10px 0;
+        width: 100%;
+
+        .tag-item{
+            cursor: pointer;
+            text-transform: capitalize;
+            width: fit-content;
+            padding: 4px 8px;
+            margin: 3px 12px 3px 0;
+            border-radius: 3px;
+            border: 1px solid rgba($primary, 0.4);
+            color: $primary;
+            background-color: rgba($primary, 0.05);
+        }
+    }
+}

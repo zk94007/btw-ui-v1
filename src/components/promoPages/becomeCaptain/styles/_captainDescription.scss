@@ -1,0 +1,44 @@
+.bbc-captain-description{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .description-content{
+
+        .captain-title{
+            width: 464px;
+            font-size: 42px;
+            margin-bottom: 22px;
+            color: $black;
+
+            @include respond-to($tablet) {
+                font-size: 32px;
+                width: 90%;
+            }
+
+            @include respond-to($phone) {
+                font-size: 21px;
+                width: 100%;
+            }
+        }
+
+        .captain-description{
+            font-size: 18px;
+            font-weight: normal;
+            width: 100%;
+
+            @include respond-to($phone) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .captain-image{
+        display: none;
+        width: 232px;
+
+        @include respond-to($tablet) {
+            display: block;
+        }
+    }
+}

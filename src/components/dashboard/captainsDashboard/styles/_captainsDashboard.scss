@@ -1,0 +1,100 @@
+.btw-captains-dashboard {
+
+    .main-content-opacity{
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    .user-info-content {
+        margin: 36px 0;
+
+        @include respond-to($phone) {
+            margin: 30px 0;
+        }
+
+        .main-title{
+            padding: 0;
+            margin-bottom: 24px;
+        }
+    }
+
+    .top-congrats{
+        display: none;
+        margin-bottom: 24px;
+        
+        .congrat-link{
+            margin-top: 5px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        @include respond-to($phone) {
+            display: block;
+        }
+    }
+
+    .content {
+        margin-bottom: 26px;
+
+        .content-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 26px;
+
+            .content-title{
+                font-size: 18px;
+            }
+
+            .accordion-button{
+                
+                @include respond-to($computer) {
+                    display: none;
+                }
+            }
+
+            @include respond-to($phone) {
+                padding-top: 18px;
+                border-top: 1px solid $divider;
+                margin-bottom: 20px;
+
+                .content-title{
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .content-inactive {
+            @include respond-to($phone) {
+                display: none;
+            }
+        }
+        
+        .view-button {
+            font-size: 13px;
+            color: $primary;
+            cursor: pointer;
+        }
+
+        .view-all{
+            @extend .view-button;
+
+            @include respond-to($phone) {
+                display: none;
+            }
+        }
+
+        .view-all-mobile{
+            @extend .view-button;
+            display: none;
+
+            @include respond-to($phone) {
+                display: block;
+            }
+        }
+    }
+
+    .svg-icon{
+        padding-right: 3px;
+    }
+}

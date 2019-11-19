@@ -1,0 +1,25 @@
+.verify-email {
+    padding: 48px 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .confirm-text {
+        margin-top: 45px;
+    }
+
+    .email-address {
+        font-size: 16px;
+        margin-top: 17px;
+    }
+
+    .receive-email {
+        margin-top: 37px;
+
+        .resend-btn {
+            margin-left: 4px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.btw-profile-panel {
+    margin-bottom: 24px;
+    border-radius: 3px !important;
+
+    .panel-title {
+        border-bottom: 1px solid $dark-grey;
+        padding: 14px 32px;
+    }
+
+    .panel-body {
+        padding: 28px 88px;
+
+        @include respond-to($tablet) {
+            padding: 14px 32px;
+        }
+    }
+}

@@ -1,0 +1,137 @@
+.bpp-our-team{
+    margin: 60px 0;
+    position: relative;
+    padding: 0 60px;
+    
+    @include respond-to($phone) {
+        padding: 0;
+    }
+
+    .ourteam-title{
+        font-size: 42px;
+        color: $black;
+        padding: 0 40px;
+        
+        @include respond-to($tablet) {
+            font-size: 32px;
+        }
+
+        @include respond-to($phone) {
+            font-size: 21px;
+            padding: 0;
+        }
+    }
+
+    .carousel-content{
+        text-align: left;
+
+        @include respond-to($computer) {
+            padding: 0 40px;
+        }
+
+        .member-avatar{
+            width: 176px;
+            margin: 40px 0;
+            position: relative;
+
+            .background-img-odd{
+                z-index: -1;
+                position: absolute;
+                bottom: -25px;
+                right: -70px;
+            }
+
+            .background-img-even{
+                z-index: -1;
+                position: absolute;
+                top: -25px;
+                right: -70px;
+            }
+        }
+    
+        .member-name {
+            font-size: 24px;
+            color: $primary;
+            margin-bottom: 12px;
+    
+            @include respond-to($tablet) {
+                font-size: 27px;
+                margin-bottom: 8px;
+            }
+    
+            @include respond-to($phone) {
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+        }
+        
+        .member-role{ 
+            font-size: 16px;
+            margin-bottom: 26px;
+            color: $black;
+    
+            @include respond-to($tablet) {
+                font-size: 18px;
+            }
+    
+            @include respond-to($phone) {
+                font-size: 14px;
+            }
+        }
+    
+        .member-description{
+            font-size: 18px;
+            margin-bottom: 18px;
+            font-weight: normal;
+    
+            @include respond-to($phone) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .alice-carousel{
+        padding: 30px 0;
+
+        .alice-carousel__dots {
+            margin: 10px 0;
+
+            @include respond-to($computer) {
+                display: none;
+            }
+
+            .alice-carousel__dots-item{
+                width: 4px;
+                height: 4px;
+
+                &:not(:last-child){
+                    margin-right: 4px
+                }
+            }
+            
+            .alice-carousel__dots-item:hover, .alice-carousel__dots-item.__active {
+                background-color: $black;
+            }
+        }
+    }
+
+    .prev-btn{
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+        @include respond-to($phone) {
+            display: none;
+        }
+    }
+
+    .next-btn{
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        @include respond-to($phone) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@import '~font-awesome/css/font-awesome.css';
+@import '~rc-pagination/assets/index.css';
+@import '~react-select/dist/react-select.css';
+
+@font-face {
+	font-family: Open-Sans;
+	font-weight: 300;
+	src: url(../resources/fonts/OpenSans-Light.ttf)
+}
+@font-face {
+	font-family: Open-Sans;
+	font-weight: normal;
+	src: url(../resources/fonts/OpenSans-Regular.ttf)
+}
+@font-face {
+	font-family: Open-Sans;
+	font-weight: 600;
+	src: url(../resources/fonts/OpenSans-SemiBold.ttf)
+}
+@font-face {
+	font-family: Open-Sans;
+	font-weight: bold;
+	src: url(../resources/fonts/OpenSans-Bold.ttf)
+}
+@font-face {
+	font-family: Open-Sans;
+	font-weight: 800;
+	src: url(../resources/fonts/OpenSans-ExtraBold.ttf)
+}
+
+html {
+	font-size: 14px;
+
+	body {
+		font-family: Open-Sans;
+	}
+}

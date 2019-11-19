@@ -1,0 +1,32 @@
+@import '../../../styles/shared/index.scss';
+.btw-policy {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  width: 60%;
+
+  .title {
+    font-size: 30px !important;
+  }
+
+  .height-15 {
+    height: 15px;
+  }
+
+  a{
+    color: $primary !important;
+    text-decoration: underline !important;
+    cursor: pointer;
+  }
+
+  ul {
+    li{
+      font-size: 13px;
+    }
+  }
+
+  @include respond-to($phone) {
+    width: 100%;
+    margin: 0;
+    padding: 40px 28px;
+  }
+}

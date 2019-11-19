@@ -1,0 +1,48 @@
+.bcd-task-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 26px;
+    border-radius: 3px;
+    border-left: 8px solid transparent;
+    
+    .item-content{
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .task-status {
+            display: flex;
+            align-items: center;
+    
+            .mark-button {
+                width: 88px;
+                margin-left: 5px;
+                background: transparent;
+
+                @include respond-to($phone) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .footer-mark-button {
+        font-weight: 600;
+        border-radius: 0;
+
+        @include respond-to($computer) {
+            display: none;
+        }
+    }
+}
+
+.bcd-task-item-light{
+    background: linear-gradient($white,$white) padding-box,
+    linear-gradient(to bottom, rgba($primary_color, 0.5) 34.93%, rgba($primary_color, 0.8) 86.82%) border-box;
+}
+
+.bcd-task-item-dark{
+    background: linear-gradient($white,$white) padding-box,
+    linear-gradient(to bottom, rgba($secondary_color, 0.5) 34.93%, rgba($secondary_color, 0.8) 86.82%) border-box;
+}

@@ -1,0 +1,79 @@
+.btw-voter-action {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    padding-top: 24px;
+
+    .title {
+        margin-bottom: 12px;
+    }
+    
+    .action-header {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 12px;
+
+        .action-status{
+            padding-left: 5px;
+            font-weight: 600;
+        }
+    }
+
+    .voter-action-item{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        flex-direction: column; 
+        margin-bottom: 24px;
+
+        .action-info{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row; 
+            border: 1px solid $divider;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 16px 24px;
+
+            .action-name{
+                margin-bottom: 6px;
+            }
+        }
+
+        .action-control{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 120px;
+
+            .task-point {
+                padding-left: 3px;
+            }
+
+            .computer-mark-action-button{
+                width: unset;
+                white-space: nowrap;
+                margin-left: 5px;
+
+                @include respond-to($phone) {
+                    display: none;
+                }
+            }
+
+            @include respond-to($phone) {
+                min-width: unset;
+            }
+        }
+
+        .mobile-mark-action-button{
+            background-color: unset;
+            
+            @include respond-to($computer) {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.btw-voter-performer-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2px;
+    padding: 16px 24px;
+    margin: 14px 0;
+
+    &:hover {
+        border: 1px solid #4B70F3;
+    }
+
+    .performer-info{
+        display: flex;
+    }
+
+    .performer-status{
+        display: flex;
+
+        .status-item{
+
+            &:first-child{
+                margin-right: 36px;
+
+                @include respond-to($phone) {
+                    margin-right: 0;
+                }
+            }
+
+            .status-label{
+                color: $secondary;
+
+                @include respond-to($phone) {
+                    display: none;
+                }
+            }
+        }
+
+        @include respond-to($phone) {
+            flex-direction: column;
+        }
+    }
+}

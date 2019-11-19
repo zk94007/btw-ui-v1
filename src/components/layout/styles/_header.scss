@@ -1,0 +1,233 @@
+.btw-header {
+  background-color: $primary;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  height: 72px;
+  display: flex;
+  align-items: center;
+
+  header {
+    height: 72px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      @include respond-to($phone) {
+        margin-left: 24px;
+      }
+      @include respond-to($tablet) {
+        margin-left: 72px;
+      }
+      @include respond-to($desktop) {
+        margin-left: 200px;
+      }
+    }
+  }
+
+  .btw-header-logo {
+    cursor: pointer;
+  }
+
+  .btw-on-header {
+    color: $white;
+
+    .btw-header-logo {
+      @include respond-to($phone) {
+        img {
+          width: 46px;
+        }
+        .menu-item {
+          font-size: 16px;
+          font-weight: 500;
+          cursor: pointer;
+          text-decoration: none;
+          color: $white;
+        }
+      }
+    }
+
+    .btw-header-menus {
+      width: 100%;
+      @include respond-to($tablet) {
+        text-align: center;
+      }
+      @include respond-to($phone) {
+        text-align: center;
+      }
+    }
+    
+    .nav-item {
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      @include respond-to($phone) {
+        display: none;
+      }
+    }
+
+    .nav-item.active-menu {
+      font-weight: 600;
+      @include respond-to($phone) {
+        display: block;
+      }
+    }
+  }
+
+  .btw-nav-dropdown {
+    button.dropdown-toggle.btn.btn-primary {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+    .dropdown-toggle {
+      display: flex;
+      align-items: center;
+      .menu-icon {
+        display: none;
+        @include respond-to($phone) {
+          display: block;
+        }
+      }
+      &::after {
+        @include respond-to($phone) {
+          display: none;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      min-width: 220px;
+    }
+
+    .menu-profile {
+      @include respond-to($phone) {
+        display: none;
+      }
+    }
+
+    .dropdown-item {
+      font-size: 14px;
+      text-decoration: none;
+
+      .btw-avatar-title {
+        font-size: 12px;
+
+        .btw-avatar-name {
+          font-size: 12px;
+          font-weight: 700;
+          margin-bottom: 0;
+        }
+        .btw-avatar-email {
+          font-size: 12px;
+          margin-bottom: 0;
+        }
+      }
+
+      .btw-profile-level {
+        h6 {
+          margin-bottom: 0;
+        }
+        
+        .level-value {
+          font-weight: 700;
+          img {
+            width: 15px;
+            height: 15px;
+            margin-right: .5em;
+          }
+        }
+      }
+
+      .menu-icon {
+        margin-right: .5em;
+      }
+    }
+  }
+
+  .btw-promo-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .promo-header-menu{
+      display: flex;
+      align-items: center;
+      
+      @include respond-to($phone) {
+        display: none;
+      }
+
+      .faq-item{
+        cursor: pointer;
+        color: $black;
+        font-size: 18px;
+        padding-right: 40px;
+      }
+
+      .become-caption-button{
+        color: $white;
+        background-color: $black;
+        width: 180px;
+        font-size: 16px;
+        margin-right: 40px;
+      }
+    }
+    
+    .promo-mobile-menu {
+       
+      @include respond-to($computer) {
+        display: none;
+      }
+
+      .mobile-header-panel{
+        position: absolute;
+        background-color: $white;
+        min-width: 100%;
+        z-index: 1;
+        top: 60px;
+        left: 0;
+        height: 184px;
+        padding: 32px 15px;
+        display: flex;
+        flex-direction: column;
+
+        .faq-item{
+          font-weight: 500;
+          font-size: 18px;
+          color: $primary;
+          margin-bottom: 8px;
+        }
+
+        .become-caption-button{
+          font-weight: 500;
+          font-size: 18px;
+          color: $black;
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    .dropdown-toggle{
+      background-color: unset;
+      border: 0;
+
+      &:focus{
+        box-shadow: unset;
+      }
+
+      &:active{
+        background-color: unset;
+        box-shadow: unset;
+      }
+
+      &::after{
+        display: none;
+      }
+    }
+  }
+}
+
+.btw-light-header{
+  background-color: $white;
+}

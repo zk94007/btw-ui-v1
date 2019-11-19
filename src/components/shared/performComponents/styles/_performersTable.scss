@@ -1,0 +1,110 @@
+.btw-performers-table{
+
+    .table-responsive {
+        border: 0;
+        height: 540px;
+        width: 100%;
+        overflow-y: scroll;
+        padding: 0 10px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+      
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px $background; 
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: $divider; 
+        border-radius: 3px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: $background; 
+    }
+
+    .table {
+        margin-bottom: 0;
+
+        .rank-content{
+            width: 80px;
+        }
+
+        .score-content{
+            width: 15%;
+
+            @include respond-to($tablet) {
+                width: 25%;
+            }
+        }
+
+        th {
+            position: sticky;
+            top: 0;
+            vertical-align: bottom;
+            border-bottom: 0.5px solid $divider;
+            border-top: unset;
+            color: $secondary;
+            font-size: 13px;
+            font-weight: normal;
+            background-color: $white;
+            z-index: 1;
+            padding: 14px 4px;
+
+            @include respond-to($phone) {
+                background-color: unset;
+            }
+        }
+
+        .desktop-header {
+
+            @include respond-to($phone) {
+                display: none;
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    height: 63.5px;
+                    padding: 8px 4px;
+                    font-size: 13px;
+                    font-weight: normal;
+                    color: $secondary;
+                    vertical-align: middle;
+                }
+            }
+
+            .selected-row{
+                background: linear-gradient(266.97deg, rgba($primary_color, 0.4) 0.26%, rgba($primary_color, 0.7) 98.82%);
+                
+                *{
+                    color: white !important;
+                }
+            }
+            
+            .mobile-body {
+
+                @include respond-to($computer) {
+                    display: none;
+                }
+            }
+
+            .desktop-body {
+
+                @include respond-to($phone) {
+                    display: none;
+                }
+            }
+
+            .status-content{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+        }
+    }
+}

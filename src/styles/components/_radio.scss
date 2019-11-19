@@ -1,0 +1,18 @@
+.btw-radio-option {
+	display: flex;
+	align-items: center;
+	margin-bottom: .3em;
+
+	input {
+		// z-index: -1;
+	}
+
+	label {
+	    font-weight: 500;
+	    font-size: 13px;
+	    margin: 0;
+	    margin-left: 0.5em;
+	    cursor: pointer;
+	    user-select: none;
+	}
+}

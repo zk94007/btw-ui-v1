@@ -1,0 +1,48 @@
+.btw-dnd-upload {
+    width: 100%;
+    margin: 20px 0;
+
+    .drop-zone{
+    	padding: 1em;
+        border: 2px dashed $dark-grey;
+        width: 100%;
+
+        @include respond-to($portable) { 
+    	    width: 170px;
+    	    margin: auto;
+    	    justify-content: center;
+    	    display: flex;
+    	    flex-direction: column;
+    	    height: 170px;
+    	    border-radius: 5px;
+        }
+        
+        .tablet-upload{
+            text-align: center;
+            cursor: pointer;
+            
+            div{
+                color: $primary !important;
+            }
+
+            @include respond-to($desktop) { 
+                display: none;
+            }
+        } 
+
+        .desktop-upload{
+            span {
+                color: $primary;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                    color: $primary;
+                }
+            }
+
+            @include respond-to($portable) { 
+                display: none;
+            }
+        } 
+    }
+}

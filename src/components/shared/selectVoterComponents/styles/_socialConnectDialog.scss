@@ -1,0 +1,49 @@
+.bsc-social-connect-dialog{
+    
+    .modal-content {
+        padding: 0 !important;
+        border: 0 !important;
+    }
+
+    .modal-header {
+        box-sizing: border-box;
+        border-radius: 2px;
+        padding: 15px 24px !important;
+        border: 0.5px solid $divider !important;
+
+        .heading{
+            font-size: 13px;
+        }
+    }
+    
+    .modal-body {
+        padding: 18px 24px !important;
+
+        .content {
+            margin: 28px 54px;
+            padding: 24px;
+            border: 1px solid $divider;
+            border-radius: 3px;
+            box-sizing: border-box;
+            
+            .btw-social-item:last-child {
+                .border-container {
+                    display: none;
+                }
+            }
+
+            @include respond-to($tablet) {
+                margin: 18px 0px;
+            }
+        
+            @include respond-to($phone) {
+                margin: 18px 0px;
+            }
+        }
+    }
+
+    .modal-footer {
+        border: none;
+        padding: 0 !important;
+    }
+}

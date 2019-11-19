@@ -1,0 +1,47 @@
+.btw-forgot-password {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+    width: 512px;
+    padding-top: 90px;
+  
+	.content{
+        padding: 51px 88px;
+        width: 100%;
+	}
+  
+	.title{
+        margin-bottom: 13px;
+	}
+  
+	.description{
+        margin-bottom: 14px;
+    }
+    
+    .inputs-row {
+        margin-bottom: 15px;
+      }
+      
+    .successMessage{
+        font-size: 13px;
+        color: $success;
+    }
+
+    .errorMessage{
+        font-size: 13px;
+        color: $error;
+    }
+	
+    a {
+        color: $primary;
+        text-decoration: none;
+    }
+  
+	@media screen and (max-width: 568px) {
+        .content{
+            padding: 37px 16px;
+        }
+        width: 100%;
+        margin: 0 24px;
+	}
+}

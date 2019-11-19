@@ -1,0 +1,21 @@
+.btw-task-detail-content{
+    padding: 28px 24px;
+
+    .task-info{
+        margin-bottom: 20px;
+
+        .task-duration{
+            margin-bottom: 23px;
+        }
+
+        .short-text{
+            font-weight: normal;
+            font-size: 13px;
+            color: $secondary;
+        }
+    }
+
+    .subtask-contents{
+        margin-bottom: 50px;
+    }
+}

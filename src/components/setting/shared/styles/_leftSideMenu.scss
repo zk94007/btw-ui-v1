@@ -1,0 +1,58 @@
+.btw-setting-sidebar {
+    
+    @include respond-to($desktop) {
+        position: fixed;
+    }
+
+    .sidebar-menu {
+        margin-bottom: 22px;
+
+        .sidebar-item {
+
+            cursor: pointer;
+            margin-bottom: 6px;
+
+            &.active {
+                color: $main !important;
+                
+                @include respond-to($phone) {
+                    border-bottom: 2px solid $primary;
+                }
+            }
+
+            @include respond-to($portable) { 
+                margin-right: 20px;
+            }
+
+            @include respond-to($phone) {
+                margin-bottom: 0;
+                padding: 14px 0;
+            }
+        }
+
+        @include respond-to($portable) {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 0;
+        }
+    }
+
+    .logout-button{
+        a { font-size: 13px; }
+
+        @include respond-to($phone) {
+          display: none !important;
+        }	
+    }
+
+    @include respond-to($portable) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    @include respond-to($phone) {
+        border-bottom: 1px solid $dark-grey;
+        padding: 0 24px;
+    }	
+}

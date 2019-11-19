@@ -1,0 +1,98 @@
+.bsc-multiple-match-dialog{
+    
+    @include respond-to($phone) {
+        padding: 0 !important;
+    }
+
+    .modal-header {
+        box-sizing: border-box;
+        border-radius: 2px;
+        padding: 15px 24px !important;
+        border: 0.5px solid $divider !important;
+        
+        .heading{
+            font-size: 13px;
+        }
+    }
+    
+    .modal-dialog{
+        @include respond-to($phone) {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    }
+
+    .modal-content{
+        padding: 0 !important;
+        border: 0;
+
+        @include respond-to($phone) {
+            height: 100vh;
+        }
+    }
+
+    .modal-body {
+        padding: 18px 24px !important;
+        overflow: overlay;
+        height: 70vh;
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            width: 100%;
+            margin: 24px 0;
+        }
+
+        .voter-info{
+            display: flex;
+            padding: 34px 0;
+            align-items: center;
+
+            .voter-status{
+                padding-left: 16px;
+            }
+        }
+
+        .potential-list{
+            margin: 21px 0;
+        }
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+      
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px $background; 
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: $divider; 
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: $background; 
+    }
+    .modal-footer {
+        padding: 18px 24px !important;
+
+        .button-list{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            width: 100%;
+    
+            .match-button{
+                width: 93px;
+                margin-right: 16px;
+            }
+    
+            .skip-button{
+                width: 93px;
+            }
+        }
+    }
+}

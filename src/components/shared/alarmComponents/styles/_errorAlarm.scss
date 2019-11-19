@@ -1,0 +1,14 @@
+.btw-error-alarm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 24px;
+    border-radius: 2px !important;
+    border-left: 4px solid $danger;
+}
+
+.btw-error-outer {
+    position: absolute;
+    top: 100px;
+    width: 60%;
+}

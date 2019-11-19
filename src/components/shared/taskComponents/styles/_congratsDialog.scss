@@ -1,0 +1,75 @@
+.btw-congrate-dialog {
+    .modal-dialog {
+        overflow: hidden;
+        border-radius: 6px !important;
+        
+        @include respond-to($computer) {
+            width: 287px !important;
+        }
+
+        .modal-header, .modal-footer {
+            display: none;
+        }
+    
+        .modal-content{
+            padding: 0 !important;
+            border: 0;
+            border-radius: 6px !important;
+        }
+
+        .modal-body {
+            background: linear-gradient(180.25deg, rgba($primary_color, 0.5) 0.14%, rgba($primary_color, 0.8) 99.87%);
+            border-radius: 3px;
+            padding: 54px 48px !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+    
+            .cong-title {
+                margin: 0 0 5px;
+                font-size: 17px;
+            }
+    
+            .points-icon {
+                position: relative;
+                margin: 20px 0;
+    
+                .points {
+                    position: absolute;
+                    background: $white;
+                    border: 3px solid #43cfda;
+                    border-radius: 16px;
+                    width: 64px;
+                    height: 27px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    bottom: 0;
+                    right: 10px;
+                }
+            }
+    
+            .share-icons {
+                margin-top: 13px;
+                
+                .tw-icon {
+                    margin: 0 16px 0 0;
+                }
+            }
+        
+            .ellipse-solid {
+                position: absolute;
+                top: -48px;
+                left: 0;
+            }
+        
+            .plus-solid {
+                position: absolute;
+                bottom: 60px;
+                right: 0px;
+            }
+        }
+    }
+}

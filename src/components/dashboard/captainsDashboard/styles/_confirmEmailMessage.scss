@@ -1,0 +1,30 @@
+.bcd-confirm-email-message{
+    display: flex;
+    flex-direction: column;
+    margin-top: 38px;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 14px;
+
+        .title{
+            font-size: 16px;
+        }
+
+        .resend-email{
+            width: unset;
+
+            @include respond-to($phone) {
+                display: none;
+            }
+        }
+    }
+
+    span{
+        color: $primary;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}

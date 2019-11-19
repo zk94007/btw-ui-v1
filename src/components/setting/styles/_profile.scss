@@ -1,0 +1,38 @@
+.btw-account-settings {
+    padding-bottom: 60px;
+
+    .account-title {
+        padding: 50px 0 30px 0;
+        font-size: 20px;
+        
+        @include respond-to($phone) {
+			display: none;
+		}
+    }
+
+	.side-wrapper {
+		@include respond-to($phone) {
+			padding: 0;
+		}
+	}
+
+	.btw-input label {
+		font-weight: 600;
+	}
+
+	.delete-account-button{
+		margin: 21px 0;
+		
+		@include respond-to($phone) {
+			padding: 0 24px;
+		}
+	}
+
+	label {
+		font-size: 12px;
+	}
+
+	@include respond-to($phone) {
+		padding-bottom: 30px;
+	}
+}

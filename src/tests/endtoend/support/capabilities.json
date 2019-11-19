@@ -1,0 +1,35 @@
+{
+  "safari": {
+    "browserName": "safari",
+    "version": "",
+    "platform": "ANY",
+    "javascriptEnabled": true
+  },
+  "chrome": {
+    "browserName": "chrome",
+    "version": "",
+    "platform": "ANY",
+    "javascriptEnabled": true,
+    "chromeOptions": {
+    }
+  },
+  "firefox": {
+    "browserName": "firefox",
+    "version": "",
+    "platform": "ANY",
+    "javascriptEnabled": true
+  },
+  "phantomjs": {
+    "browserName": "phantomjs",
+    "version": "",
+    "platform": "ANY",
+    "javascriptEnabled": true
+  },
+  "iphone": {
+    "browserName": "safari",
+    "appium-version": "1.4.1",
+    "platformName": "iOS",
+    "platformVersion": "8.3",
+    "deviceName": "iPhone 6"
+  }
+}

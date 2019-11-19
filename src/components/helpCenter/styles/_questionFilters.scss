@@ -1,0 +1,51 @@
+.btw-question-filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    
+    .search-input{
+        width: 256px;
+    }
+
+    .button-group {
+        display: flex;
+        width: min-content;
+
+        .filter-group {
+            margin-right: 8px;
+
+            .filter-button{
+                width: fit-content;
+                border-radius: 0;
+                text-transform: capitalize;  
+                color: $secondary;  
+
+                
+            }
+
+            .filter-button:focus{
+                outline: unset;
+            }
+
+            :first-child {
+                border-radius: 3px 0 0 3px;
+            }
+    
+            :last-child {
+                border-radius: 0 3px 3px 0;
+            }
+
+            .filter-select{
+                border: 1px solid rgba($primary, 0.4);
+                color: $main;
+                background-color: rgba($primary, 0.05);
+            }
+        }
+
+        .ask-button{
+            width: 128px;
+        }
+    }
+    
+}

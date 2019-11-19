@@ -1,0 +1,74 @@
+.btw-input {
+  .text-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid $divider;
+    border-radius: 3px;
+
+    &:focus-within {
+      border: 1px solid $primary;
+    }
+
+    input {
+      text-indent: 5px;
+      padding-right: 20px;
+      height: 40px;
+      outline: none;
+      border: none;
+      width: 100%;
+    }
+
+    textarea {
+      text-indent: 5px;
+      padding-right: 20px;
+      outline: none;
+      border: none;
+      width: 100%;
+    }
+
+    input::placeholder, 
+    textarea::placeholder {
+      font-weight: normal;
+      font-size: 14px;
+      color: $main;
+      opacity: 0.4;
+    }
+
+    label {
+      font-size: 12px;
+      font-weight: 600;
+      color: $main;
+    }
+  }
+
+  &.disabled {
+    label {
+      color: $divider;
+    }
+  }
+
+  &.error {
+    .text-box {
+      border: 1px solid $error;
+    }
+  }
+
+  .error-msg {
+    font-weight: 600;
+    font-size: 11px;
+    color: $error;
+  }
+
+  .right-icon {
+    position: absolute;
+    right: 20px
+  }
+
+  .left-icon {
+    position: absolute;
+    left: 20px;
+  }
+}
+
+

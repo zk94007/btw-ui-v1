@@ -1,0 +1,66 @@
+@import '../../../styles/shared/index.scss';
+
+.bpp-thank-you{
+    display: flex;
+    width: 100%;
+    padding: 88px 0;
+    margin-bottom: 200px;
+    
+    @include respond-to($tablet) {
+        padding: 15px 0 ;
+    }
+    
+    @include respond-to($phone) {
+        padding: 40px 0;
+        margin-bottom: 80px;
+    }
+
+    .description-content{
+
+        .thankyou-title{
+            font-size: 42px;
+            margin-bottom: 22px;
+            color: $black;
+
+            @include respond-to($tablet) {
+                font-size: 32px;
+            }
+
+            @include respond-to($phone) {
+                font-size: 21px;
+            }
+        }
+
+        .thankyou-description{
+            font-size: 18px;
+            font-weight: normal;
+            width: 100%;
+            margin-bottom: 33px;
+
+            @include respond-to($phone) {
+                font-size: 16px;
+            }
+        }
+
+        .back-to-home{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: $primary;
+            padding-bottom: 21px;
+            cursor: pointer;
+        }
+    }
+
+    .thankyou-image{
+        width: 50%;
+
+        @include respond-to($tablet) {
+            width: 232px;
+        }
+
+        @include respond-to($phone) {
+            display: none;
+        }
+    }
+}

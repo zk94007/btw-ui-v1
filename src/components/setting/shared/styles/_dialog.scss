@@ -1,0 +1,44 @@
+
+.btw-account-modal.btw-modal {
+	.modal-content {
+		padding: 0;
+		.modal-header {
+			border-bottom: 1px solid $dark-grey;
+			padding: 1em;
+			padding-left: 2em;
+			.btw-typography.heading {
+				font-size: 15px;
+			    font-weight: 700;
+			}
+		}
+
+		.modal-body {
+			padding: 2em;
+			min-height: 30px;
+		}
+		.modal-footer {
+			justify-content: flex-start;
+		    padding: 0 2em 4em 2em;
+
+		    .primary,
+		    .secondary.leave {
+		    	width: 154px;
+		    }
+
+		    .secondary {
+		    	width: 88px;
+		    }
+
+		    @include respond-to($phone) { 
+		    	flex-direction: column;
+		    	.primary,
+	    	 	.secondary,
+	    	 	.secondary.leave {
+		    		width: 100%;
+		    		margin: 0;
+		    		margin-bottom: 1em;
+		    	}
+		    }
+		}
+	}
+}

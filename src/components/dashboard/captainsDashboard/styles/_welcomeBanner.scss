@@ -1,0 +1,54 @@
+.bcd-welcome-banner {
+    margin-bottom: 37px;
+    padding: 26px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: unset !important;
+        margin: 21px 0;
+    }
+
+    .okay-button{
+        width: unset;
+    }
+
+    .content{
+        .text {
+            font-size: 15px;
+            margin-bottom: 13px;
+        }
+    }
+
+    .carousel{
+        width: 335px !important;
+
+        @include respond-to($phone) {
+            width: 280px !important;
+        }
+
+        .slide {
+            background: unset;
+            display: flex;
+            align-items: center;
+        }
+
+        .control-dots{
+            padding: 0;
+            position: relative;
+            margin-top: 0;
+
+            .dot{
+                width: 4px;
+                height: 4px;
+                margin: 0 2px;
+
+                &.selected, &:hover {
+                    background: $primary;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.btw-task-list-page {
+
+    .actions-tabs {
+        margin-bottom: 26px;
+    }
+
+    .task-selected {
+        border:1px solid $primary;
+    }
+
+    .task-list {
+        height: 75vh;
+        overflow-y: auto;
+    }
+
+    .task-empty {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        padding-top: 200px;
+        flex-direction: column;
+    }
+
+    &.mobile-selected-action {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1040;
+        width: 100%;
+        overflow-y: scroll;
+        height: 100%;
+        display: block;
+        padding-top: 64px;
+    }
+
+    .mobile-selected-header {
+        background: $primary;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        padding: 23px;
+        justify-content: space-between;
+
+        .goto-all-actions {
+            display: flex;
+            align-items: center;
+            
+            .nav-title {
+                margin-left: 11px;
+            }
+        }
+    }
+}

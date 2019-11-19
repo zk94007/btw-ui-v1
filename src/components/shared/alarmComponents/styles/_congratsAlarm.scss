@@ -1,0 +1,27 @@
+.btw-congrats-alarm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 24px;
+    background: linear-gradient(180.25deg, rgba($primary_color, 0.5) 0.14%, rgba($primary_color, 0.8) 99.87%);
+    border-radius: 3px;
+    position: relative;
+    
+    .congrats-title{
+        font-size: 17px;
+        color: $white;
+    }
+
+    .ellipse-large {
+        position: absolute;
+        top: -40px;
+        left: -15px;
+    }
+
+    .ellipse-small {
+        position: absolute;
+        width: 30px;
+        top: -15px;
+        right: 16px;
+    }
+}

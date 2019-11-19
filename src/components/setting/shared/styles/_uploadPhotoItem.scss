@@ -1,0 +1,21 @@
+.bsp-photo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+
+    .file-info {
+        display: flex;
+        align-items: center;
+
+        .file-name{
+            padding-left: 8px;
+        }
+    }
+
+    .remove-button {
+        cursor: pointer;
+    }
+}

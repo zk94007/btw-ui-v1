@@ -1,0 +1,52 @@
+.btw-connect-list-info {
+	align-items: left;
+	justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  
+    .title{
+        margin-bottom: 16px;
+        font-size: 16px !important;
+    }
+
+    .description{
+        margin-bottom: 16px;
+    }
+
+    .file-list{
+        margin-bottom: 16px;
+
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 4px 0;
+
+            .file-info {
+                display: flex;
+                align-items: center;
+
+                .file-name{
+                    padding-left: 8px;
+                }
+            }
+
+            .file-action {
+                width: 25px;
+            }
+        }
+    }
+
+    .import-button{
+        width: 100%;
+    }
+
+    @include respond-to($tablet) {
+        display: none;
+    }
+
+    @include respond-to($phone) {
+        display: none;
+    }
+}

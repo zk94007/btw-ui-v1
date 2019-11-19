@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "react",
+    ["env", {"modules": false, "loose": true}]
+  ],
+  "plugins": ["transform-object-rest-spread", "transform-decorators-legacy"],
+  "env": {
+    "test": {
+      "presets": [
+        "env"
+      ]
+    }
+  }
+}

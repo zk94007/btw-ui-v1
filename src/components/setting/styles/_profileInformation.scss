@@ -1,0 +1,26 @@
+.btw-profile-information {
+
+    .field-content{
+        margin: 14px 0 24px 0;
+
+        .field-label {
+            margin-bottom: 7px;
+        }
+    }
+
+    textarea{
+        width: 100%;
+        padding: 10px 16px;
+        border: 1px solid $divider;
+        box-sizing: border-box;
+        border-radius: 3px;
+        margin-bottom: 5px;
+    }
+
+    @include respond-to($phone) {
+        padding: 0 24px;
+        button {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.btw-potential-item {
+    display: flex;
+    align-items: center;
+    padding: 18px 10px;
+    margin-bottom: 8px;
+    border: 1px solid $divider;
+    border-radius: 5px;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    &:hover {
+        cursor: pointer;
+        border: 1px solid $primary;
+    }
+
+    .potential-info{
+        display: flex;
+    }
+
+    .select-icon{
+        padding-right: 14px;
+    }
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.potential-item-select {
+    border: 1px solid $primary;
+    background-color: rgba($primary, 0.05);
+}

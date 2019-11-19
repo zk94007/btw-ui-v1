@@ -1,0 +1,104 @@
+.bpp-video-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+
+    @include respond-to($tablet) {
+        align-items: flex-start;
+    }
+
+    @include respond-to($phone) {
+        flex-direction: column-reverse;
+    }
+
+    .video-part{
+        width: 50%;
+        position: relative;
+
+        @include respond-to($phone) {
+            width: 100%;
+        }
+        
+        .video-player {
+            height: 324px;
+            position: relative;
+            width: 90%;
+
+            @include respond-to($portable) {
+                height: 212px;
+            }
+
+            @include respond-to($phone) {
+                width: 100%;
+            }
+
+            video{
+                border-radius: 4px;
+                object-fit: cover;
+            }
+
+            .big-watch-video {
+                z-index: 88;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .description-part{
+        width: 50%;
+
+        @include respond-to($phone) {
+            width: 100%;
+        }
+
+        .video-title{
+            font-size: 27px;
+            margin-bottom: 23px;
+            color: $black;
+
+            @include respond-to($portable) {
+                font-size: 21px;
+                margin-bottom: 16px;
+            }
+        }
+
+        .video-description{
+            font-size: 18px;
+            margin-bottom: 53px;
+            font-weight: normal;
+            width: 85%;
+
+            @include respond-to($tablet) {
+                margin-bottom: 32px;
+                width: 100%;
+            }
+        
+            @include respond-to($phone) {
+                font-size: 16px;
+                margin-bottom: 44px;
+                width: 100%;
+            }
+        }
+
+        .small-watch-video{
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 14px;
+            color: $black;
+            cursor: pointer;
+
+            @include respond-to($phone) {
+                display: none;
+            }
+        }
+    }
+}

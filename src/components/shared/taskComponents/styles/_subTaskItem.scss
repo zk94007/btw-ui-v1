@@ -1,0 +1,76 @@
+.btw-subtask-item {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+
+    .item-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid $divider;
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 15px;
+        width: 100%;
+    }
+
+    &.completed-subtask{
+        opacity: 0.5;
+    }
+
+    &.hide-subtask{
+        background-color: $divider;
+        opacity: 1;
+    }
+
+    .voter-info {
+        display: flex;
+        align-items: center;
+
+        .voter-detail{
+            display: flex;
+            flex-direction: column;
+            
+            .voter-name, .voter-status{
+                padding-left: 12px;
+                
+                @include respond-to($phone) {
+                    padding-left: 3px;
+                }
+            }
+
+            .voter-social{
+                display: flex;
+            }
+        }
+    }
+
+    .sub-task-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 90px;
+
+        .mark-button{
+            width: unset;
+            margin-left: 8px;
+
+            @include respond-to($phone) {
+                display: none;
+            }
+        }
+
+        @include respond-to($phone) {
+            min-width: unset;
+        }
+    }
+
+    .footer-mark-button {
+        font-weight: 600;
+        border-radius: 3px;
+
+        @include respond-to($computer) {
+            display: none;
+        }
+    }
+}

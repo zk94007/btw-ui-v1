@@ -1,0 +1,91 @@
+.btw-voters-table{
+
+    .desktop-header {
+        position: sticky;
+        top: 0;
+        vertical-align: bottom;
+        border-bottom: 0.5px solid $divider;
+        border-top: unset;
+        color: $secondary;
+        font-size: 13px;
+        font-weight: normal;
+        background-color: $white;
+        z-index: 1;
+        padding: 14px 4px;
+        margin-bottom: 10px;
+    }
+
+    .mobile-body {
+        display: flex;
+        align-items: start;
+        min-height: 60px;
+
+        .voter {
+            border-bottom: 1px solid $divider;
+            padding-top: 10px;
+        }
+
+        .voter-info {
+            font-size: 11px;
+        }
+
+        .check {
+            margin-right: 10px;
+        }
+
+        .status-div {
+            width: 95px;
+            padding-right: 5px;
+        }
+
+        .voter-info {
+            width: 100%;
+        }
+    }
+
+    .desktop-body {
+        .column {
+            display: flex;
+            align-items: center;
+        }
+
+        .social {
+            justify-content: center;
+        }
+
+        height: 63.5px;
+        font-size: 13px;
+        font-weight: normal;
+        color: $secondary;
+
+        @include respond-to($computer) {
+            padding: 8px 4px;
+        }
+
+        .check {
+            @include respond-to($computer) {
+                padding-left: 20px;
+            }
+        }
+
+        .name {
+            color: $main;
+        }
+
+        .description {
+            margin-bottom: 0;
+            font-size: 12px;
+            color: $secondary;
+        }
+
+        .status {
+            margin-top: 6px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .selected-row{
+            background-color: rgba($primary, 0.05);
+        }
+    }
+}

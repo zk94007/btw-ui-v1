@@ -1,0 +1,75 @@
+.btw-comment-editor{
+    display: flex;
+    margin-bottom: 21px;
+
+    .comment-avatar{
+        margin-right: 15px;
+    }
+
+    .comment-content{
+        width: 100%;
+        
+        .content-editor{
+            width: 100%;
+            padding: 10px 16px;
+            border: 1px solid $divider;
+            box-sizing: border-box;
+            border-radius: 3px;
+            margin-bottom: 5px;
+
+            textarea{
+                width: 100%;
+                border: 0;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            .drop-zone {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px dashed $divider;
+                margin: 8px 8px 8px 0;
+                width: 64px;
+                height: 64px;
+                border-radius: 3px;
+            }
+
+            .image-list{
+                display: flex;
+                flex-flow: wrap;
+
+                .image-item{
+                    position: relative;
+                    margin: 8px 8px 8px 0;
+
+                    .image{
+                        width: 64px;
+                        height: 64px;
+                        border-radius: 3px;
+                    }
+
+                    .remove-button{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        margin: 3px;
+                    }
+                }
+            }
+        }
+        
+        .content-footer{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            
+            .content-button{
+                width: unset;
+                margin-left: 10px;
+            }
+        }
+    }
+}

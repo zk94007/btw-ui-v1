@@ -1,0 +1,58 @@
+.btw-spinner {
+  position: fixed;
+  background: rgba(230,233,237, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  pointer-events: all;
+  overflow: hidden;
+  top: 72px;
+  left: 0;
+
+
+  .inner {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url(../../../resources/icons/spinner.png);
+    animation: loader-waves 4s infinite linear;
+  }
+
+  .background {
+    position: absolute;
+    top: 30vh;
+    margin: auto;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+    transition: transform .2s ease-out;
+    transform: scale3d(0, 0, 0);
+    animation: loader-in .45s ease .25s 1 normal forwards;
+  }
+
+  @keyframes  loader-waves {
+    100% {
+      background-position: -538px 0px;
+    }
+  }
+
+  @keyframes  loader-in {
+    0% {
+      transform: scale3d(0.7, 0.7, 0.7);
+    }
+
+    50% {
+      transform: scale3d(1.2, 1.2, 1.2);
+    }
+
+    80% {
+      transform: scale3d(0.95, 0.95, 0.95);
+    }
+
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}
+

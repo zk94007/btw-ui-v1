@@ -1,0 +1,83 @@
+.btw-become-captain{
+    display: flex;
+    flex-direction: column;
+    
+    .captain-main-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 88px 0;
+        
+        @include respond-to($tablet) {
+            padding: 15px 0;
+        }
+
+        @include respond-to($phone) {
+            padding: 40px 0;
+        }
+
+        .captain-info-content{
+            width: 45%;
+
+            @include respond-to($portable) {
+                width: 100%;
+            }
+
+            .name-content{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                @include respond-to($phone) {
+                   flex-direction: column;
+                }
+
+                div{
+                    width: 48%;
+
+                    @include respond-to($phone) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .term-policy-content{
+                margin-top: 50px;
+                display: flex;
+                align-items: flex-start;
+            
+                .term-policy-label{
+                    color: $secondary;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 19px;
+                }
+            }
+
+            .button-content {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+
+                .become-captain-button{
+                    color: $white;
+                    background-color: $black;
+                    font-size: 16px;
+                    margin: 65px 0;
+        
+                    @include respond-to($phone){
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .main-image{
+            width: 50%;
+
+            @include respond-to($portable) {
+                display: none;
+            }
+        }
+    }
+}

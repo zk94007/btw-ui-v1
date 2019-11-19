@@ -1,0 +1,33 @@
+@import '../../../styles/shared/index.scss';
+
+.btw-register-paper {
+  a {
+    color: $primary;
+    text-decoration: none;
+  }
+
+  @include respond-to($phone) {
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+  }
+
+  @include respond-to($computer) {
+    width: 512px;
+    padding: 33px 88px 33px 88px;
+  }
+
+}
+
+.btw-social-width {
+  @include respond-to($phone) {
+    width: 272px;
+  }
+
+  @include respond-to($computer) {
+    width: 336px;
+  }
+}
+
+.btw-bottom-text {
+  margin-right: 6px;
+}

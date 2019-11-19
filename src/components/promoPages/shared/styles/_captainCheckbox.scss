@@ -1,0 +1,16 @@
+.btw-captain-checkbox{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+
+    .checkbox-label{
+        color: $black;
+        font-size: 14px;
+        font-weight: 500;
+        padding-top: 15px;
+    }
+
+    .error-text {
+        color: $error !important;
+    }
+}

@@ -1,0 +1,30 @@
+.btw-comment-item{
+    display: flex;
+    margin-bottom: 21px;
+
+    .comment-avatar{
+        margin-right: 15px;
+    }
+
+    .image-content{
+        display: flex;
+        flex-flow: wrap;
+
+        .image{
+            margin: 6px 6px 6px 0;
+            width: 112px;
+            height: 112px;
+            border-radius: 6px;
+        }
+    }
+
+    .content-footer{
+        display: flex;
+        opacity: 0.6;
+
+        .content-button{
+            cursor: pointer;
+            padding-right: 10px;
+        }
+    }
+}

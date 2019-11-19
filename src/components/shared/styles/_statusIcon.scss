@@ -1,0 +1,33 @@
+.btw-status-icon{
+    height: 24px;
+    border-radius: 12px;
+    padding: 3px 12px;
+    width: fit-content;
+
+    @include respond-to($phone) {
+        padding: 0 3px;
+    }
+}
+
+@mixin icon-color($color) {
+    color: $color !important;
+    background-color: rgba($color, 0.05);
+    border: 1px solid $color;
+}
+
+.status-icon-infrequent{
+    @include icon-color($alert);
+}
+
+.status-icon-regular{
+    @include icon-color($success);
+}
+
+.status-icon-not-registered{
+    @include icon-color($error);
+}
+
+.status-icon-no-border{
+    background-color: unset;
+    border: 0;
+}

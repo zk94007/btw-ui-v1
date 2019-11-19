@@ -1,0 +1,106 @@
+.btw-search-input{
+    display: inline-block;
+    width: 100%;
+    position: relative; 
+
+    input[type=text] {
+        height: 40px;
+        padding: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        border: 0;
+        float: left;
+        width: calc(100% - 142px);
+        background: $white;
+        border-radius: 3px 0 0 3px;
+        border: 1px solid $dark-grey;
+
+        &.btw-search-focus{
+            border-color: $primary;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+       
+        @include respond-to($phone) {
+            width: 100%;
+            height: 40px;
+        }
+
+        @include respond-to($computer) {
+            padding-left:  45px;
+        }
+
+        @mixin placeholder {
+            &::-webkit-input-placeholder {@content};
+            &:-moz-placeholder           {@content};
+            &::-moz-placeholder          {@content};
+            &:-ms-input-placeholder      {@content}; 
+        }
+        
+        @include placeholder {
+            color: $divider;
+            font-weight: 300;
+        }
+    }
+
+    .search-button {
+        float: left;
+        width: 142px;
+        height: 40px;
+        font-weight: 600;
+        border: 0;
+        cursor: pointer;
+        border-radius: 0 3px 3px 0;
+
+        &:disabled {
+            background-color: $dark-grey;
+        }
+
+        @include respond-to($phone) {
+            display: none;
+        }
+    }
+
+    .fa {
+        color: $divider;
+        position: absolute;
+        padding: 13px 19px;
+
+        @include respond-to($phone) {
+            padding: 12px 19px;
+        }
+    }
+
+    .fa-search {
+        left: 0;
+
+        @include respond-to($phone) {
+            left: unset;
+            right: 0;
+        }
+    }
+
+    .fa-close{
+        right: 0px;
+    }
+
+    .i-active {
+        color: $primary;
+    }
+}
+
+.btw-search-hide-button{
+    input[type=text] {
+        width: 100%;
+        padding-left:  15px;
+        border-radius: 3px;
+    }
+
+    .fa {
+        padding: 12px 19px;
+        right: 0;
+        left: unset;
+    }
+}

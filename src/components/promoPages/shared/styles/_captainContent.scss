@@ -1,0 +1,73 @@
+.bpp-become-captain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+
+    @include respond-to($phone) {
+        flex-direction: column-reverse;
+    }
+
+    .captain-content{
+        width: 50%;
+
+        @include respond-to($phone) {
+            width: 100%;
+        }
+
+        .captain-title{ 
+            font-size: 27px;
+            color: $black;
+            margin-bottom: 40px;
+            width: 460px;
+
+            @include respond-to($tablet) {
+                width: unset;
+                font-size: 24px;
+            }
+    
+            @include respond-to($phone) {
+                width: unset;
+                font-size: 21px;
+                margin: 29px 0;
+                text-align: center;
+            }
+        }
+
+        .caption-button{
+            color: $white;
+            background-color: $black;
+            font-size: 20px;
+            height: 56px;
+
+            @include respond-to($phone){
+                width: 100%;
+                font-size: 16px;
+                height: 40px;
+            }
+        }
+    }
+
+    .image-content{
+        width: 50%;
+        background-image: url("../../../../resources/background/promo-carousel-background.svg");
+        
+        @include respond-to($phone){
+            width: 80%;
+        }
+        
+        .captain-image{
+            width: 100%;
+            padding: 80px 45px;
+            background-image: radial-gradient(ellipse at 50% 49.96%, rgba($white, 0.3) 0%, rgba($white, 1) );
+
+            @include respond-to($tablet) {
+                padding: 65px 35px;
+            }
+            
+            @include respond-to($phone){
+                padding: 40px 20px;
+            }
+        }
+    }
+}

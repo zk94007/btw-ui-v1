@@ -1,0 +1,72 @@
+{
+  "users":[
+    {
+      "email": "test@test.com",
+      "password": "Aa5233713!",
+      "tags":[
+        "end to end happy path"
+      ]
+    },
+    {
+      "firstname": "automate_first",
+      "lastname": "automate_last",
+      "email": "automatetest4321@gmail.com",
+      "password": "Ajdeotyf4289*",
+      "mail_url": "https://www.gmail.com",
+      "tags":[
+        "user reset password"
+      ]
+    },
+    {
+      "firstname": "automate_first",
+      "lastname": "automate_last",
+      "email": "automatetest1111@gmail.com",
+      "password": "Ajdeotyf4289*",
+      "tags":[
+        "new user signup"
+      ]
+    },
+    {
+      "voters": [
+        {
+          "firstname": "Terrance",
+          "lastname": "Jones",
+          "city": "Atlanta",
+          "state": "GA",
+          "email": "automate@test1.com"
+        },
+        {
+          "firstname": "Curtis",
+          "lastname": "Jackson",
+          "city": "Queens",
+          "state": "NY",
+          "email": "automate@test2.com"
+        },
+        {
+          "firstname": "Peter",
+          "lastname": "John",
+          "city": "Atlanta",
+          "state": "GA",
+          "email": "automate@test3.com"
+        },
+        {
+          "firstname": "Steve",
+          "lastname": "Wagner",
+          "city": "Atlanta",
+          "state": "GA",
+          "email": "automate@test4.com"
+        },
+        {
+          "firstname": "Susan",
+          "lastname": "Wilkins",
+          "city": "Alberta",
+          "state": "GA",
+          "email": "automate@test5.com"
+        }
+      ],
+      "tags": [
+        "new voters"
+      ]
+    }
+  ]
+}
